@@ -49,6 +49,6 @@ And now you can execute ForensicMiner menu page to view all available features a
 PS C:\ForensicMiner> .\ForensicMiner.ps1 -O Menu
 ```
 #### Show Menu - Video Guide
-https://github.com/YosfanEilay/ForensicMiner/assets/132997318/b809cbe4-9fa9-48ca-bbd7-602751935396
+
 
 
