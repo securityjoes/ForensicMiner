@@ -2,14 +2,14 @@
 #### "Redefine DFIR Automations"
 ![Banner](https://github.com/YosfanEilay/ForensicMiner/assets/132997318/72d572fc-2f43-48dd-a16b-1b545eb6aad6)
 
-### What is ForensicMiner ?
+## What is ForensicMiner ?
 ForensicMiner, a PowerShell-based DFIR automation tool, revolutionizes the field of digital investigations.
 Designed for efficiency, it automates artifact and evidence collection from Windows machines. Compatibility
 with Flacon Crowdstrike RTR and Palo Alto Cortex XDR Live Terminal, along with its swift performance and 
 user-friendly interface, makes ForensicMiner an indispensable asset for investigators navigating the complexities
 of forensic analysis. Streamlined and effective, this tool sets a new standard in the realm of digital forensics.
 
-### How To Install ?
+## How To Install ?
 ![How To Install](https://github.com/YosfanEilay/ForensicMiner/assets/132997318/36c30bc3-c9f1-49f7-a3ac-b56c01e53dd1)
 
 #### Know This Before Installation
@@ -35,7 +35,7 @@ https://github.com/YosfanEilay/ForensicMiner/assets/132997318/0d9b0dd0-92e5-49db
 ### Installation Process On - Palo Alto Cortex XDR - Video Guide
 https://github.com/YosfanEilay/ForensicMiner/assets/132997318/d0efd2f4-f88d-43d0-a6a5-c1e428ae90ab
 
-### Quick Start Guide - How To Use ForensicMiner ?
+## Quick Start Guide - How To Use ForensicMiner ?
 ![Quick Start Guide](https://github.com/YosfanEilay/ForensicMiner/assets/132997318/8b9e4325-6c43-4a7a-994c-dc845f6ebabc)
 After installing ForensicMiner on the machine using the execution of "FM-Extractor.ps1" <br>
 A new folder should be created on the "C:\" drive, called "ForensicMiner". <br>
@@ -48,7 +48,7 @@ And now you can execute ForensicMiner menu page to view all available features a
 ```
 PS C:\ForensicMiner> .\ForensicMiner.ps1 -O Menu
 ```
-##### Show Menu - Video Guide
+#### Show Menu - Video Guide
 https://github.com/YosfanEilay/ForensicMiner/assets/132997318/163c6656-cc14-439c-bc7a-f775d175dd73
 
 ### Running Feature Example - RunMRU
