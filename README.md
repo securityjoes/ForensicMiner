@@ -8,3 +8,5 @@ Designed for efficiency, it automates artifact and evidence collection from Wind
 with Flacon Crowdstrike RTR and Palo Alto Cortex XDR Live Terminal, along with its swift performance and 
 user-friendly interface, makes ForensicMiner an indispensable asset for investigators navigating the complexities
 of forensic analysis. Streamlined and effective, this tool sets a new standard in the realm of digital forensics.
+
+![How To Install](https://github.com/YosfanEilay/ForensicMiner/assets/132997318/48dac001-9b4a-49bc-b5d6-86b162fa28a4)
