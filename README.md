@@ -17,7 +17,8 @@ of forensic analysis. Streamlined and effective, this tool sets a new standard i
 
 #### Automatic Installation Process
 1. From this GitHub repository press on "<> Code" and then press on "Download ZIP"
-2. Then move "FM-Package.zip" and "FM-Extractor.ps1" to the "C:\" drive and execute "FM-Extractor.ps1" with administrator privileges.
-3. Thats it, you can now use ForensicMiner.
+2. Then move "FM-Package.zip" and "FM-Extractor.ps1" to the "C:\" drive. 
+3. Execute "FM-Extractor.ps1" with administrator privileges on "C:\" drive.
+4. Thats it, you can now use ForensicMiner.
 
 #### Automatic Installation Process - Video Guide
