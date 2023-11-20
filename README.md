@@ -48,11 +48,10 @@ And now you can execute ForensicMiner menu page to view all available features a
 ```
 PS C:\ForensicMiner> .\ForensicMiner.ps1 -O Menu
 ```
-#### Show Menu - Video Guide
+##### Show Menu - Video Guide
 https://github.com/YosfanEilay/ForensicMiner/assets/132997318/163c6656-cc14-439c-bc7a-f775d175dd73
 
-
-
-
-
-
+### Running Feature Example - RunMRU
+In this example you will see how ForensicMiner manage to collect all the Run.exe execution history <br>
+of all the users (Online or Offline) in the machine and log them under "C:\ForensicMiner\MyEvidence"
+https://github.com/YosfanEilay/ForensicMiner/assets/132997318/c18f5ad9-b25a-43f8-aed1-832a5d2754a0
