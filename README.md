@@ -35,4 +35,4 @@ https://github.com/YosfanEilay/ForensicMiner/assets/132997318/0d9b0dd0-92e5-49db
 ### Installation Process On - Palo Alto Cortex XDR - Video Guide
 https://github.com/YosfanEilay/ForensicMiner/assets/132997318/d0efd2f4-f88d-43d0-a6a5-c1e428ae90ab
 
-### Quick Start Guide - How to use ForensicMiner ?
+### Quick Start Guide - How To Use ForensicMiner ?
