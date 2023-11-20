@@ -9,4 +9,4 @@ with Flacon Crowdstrike RTR and Palo Alto Cortex XDR Live Terminal, along with i
 user-friendly interface, makes ForensicMiner an indispensable asset for investigators navigating the complexities
 of forensic analysis. Streamlined and effective, this tool sets a new standard in the realm of digital forensics.
 
-![How To Install](https://github.com/YosfanEilay/ForensicMiner/assets/132997318/48dac001-9b4a-49bc-b5d6-86b162fa28a4)
+![How To Install](https://github.com/YosfanEilay/ForensicMiner/assets/132997318/36c30bc3-c9f1-49f7-a3ac-b56c01e53dd1)
