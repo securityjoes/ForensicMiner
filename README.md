@@ -62,6 +62,6 @@ https://github.com/YosfanEilay/ForensicMiner/assets/132997318/043674b4-20ca-45e2
 | ------------------------------------ | --------------------------------------- |
 | Ido Naor, Security Joes CEO          | For supporting this project             |
 | Warren Frame (RamblingCookieMonster) | Using Warre's PSSQLite in ForensicMiner |
-| Nir Avron                            | For letting me test on his laptop XD    |
+| Nir Avron                            | For letting me test on his machine      |
 
 
