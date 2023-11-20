@@ -22,3 +22,4 @@ of forensic analysis. Streamlined and effective, this tool sets a new standard i
 4. Thats it, you can now use ForensicMiner.
 
 #### Installation Process - Video Guide
+![Installation Process - Video Guide](https://github.com/YosfanEilay/ForensicMiner/assets/132997318/79e377d0-c7eb-47bb-8db2-3cb79d3737dc)
