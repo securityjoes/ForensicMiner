@@ -48,3 +48,4 @@ And now you can execute ForensicMiner menu page to view all available features a
 ```
 PS C:\ForensicMiner> .\ForensicMiner.ps1 -O Menu
 ```
+#### Show Menu - Video Guide
