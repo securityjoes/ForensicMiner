@@ -16,7 +16,7 @@ of forensic analysis. Streamlined and effective, this tool sets a new standard i
 * Always install ForensicMiner on "C:\" drive.
 * Always run ForensicMiner as administrator, if not, some things may not work properly.
 * Make sure your PowerShell Execution Policy is on Bypass, if not, scripts could not run on your system.
-* * For more information use this PS Execution Policy Guide - https://www.youtube.com/watch?v=L0fgZ0FJIv0
+ * For more information use this PS Execution Policy Guide - https://www.youtube.com/watch?v=L0fgZ0FJIv0
 
 #### Installation Process - Text Guide
 1. From this GitHub repository press on "<> Code" and then press on "Download ZIP".
