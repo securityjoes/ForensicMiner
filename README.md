@@ -57,6 +57,9 @@ of all the users (Online or Offline) in the machine and log them under "C:\Foren
 
 https://github.com/YosfanEilay/ForensicMiner/assets/132997318/043674b4-20ca-45e2-9ca6-f2218350862a
 
-
+## Credits Section
+| Name                        | Description                 |
+| --------------------------- | --------------------------- |
+| Ido Naor, Security Joes CEO | For supporting this project |
 
 
