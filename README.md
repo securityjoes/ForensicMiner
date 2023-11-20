@@ -54,6 +54,9 @@ https://github.com/YosfanEilay/ForensicMiner/assets/132997318/163c6656-cc14-439c
 ### Running Feature Example - RunMRU
 In this example you will see how ForensicMiner manage to collect all the Run.exe execution history <br>
 of all the users (Online or Offline) in the machine and log them under "C:\ForensicMiner\MyEvidence"
-https://github.com/YosfanEilay/ForensicMiner/assets/132997318/b7310854-8aac-4ec6-9bf3-05e72b7943c5
+
+https://github.com/YosfanEilay/ForensicMiner/assets/132997318/043674b4-20ca-45e2-9ca6-f2218350862a
+
+
 
 
