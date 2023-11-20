@@ -5,6 +5,6 @@
 ### What is ForensicMiner ?
 ForensicMiner, a PowerShell-based DFIR automation tool, revolutionizes the field of digital investigations.
 Designed for efficiency, it automates artifact and evidence collection from Windows machines. Compatibility
-with Flacon Crowdstrike RTR and Palo Alto Cortex XDR, along with its swift performance and user-friendly
-interface, makes ForensicMiner an indispensable asset for investigators navigating the complexities of
-forensic analysis. Streamlined and effective, this tool sets a new standard in the realm of digital forensics.
+with Flacon Crowdstrike RTR and Palo Alto Cortex XDR Live Terminal, along with its swift performance and 
+user-friendly interface, makes ForensicMiner an indispensable asset for investigators navigating the complexities
+of forensic analysis. Streamlined and effective, this tool sets a new standard in the realm of digital forensics.
