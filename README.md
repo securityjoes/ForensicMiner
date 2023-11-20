@@ -58,10 +58,14 @@ of all the users (Online or Offline) in the machine and log them under "C:\Foren
 https://github.com/YosfanEilay/ForensicMiner/assets/132997318/043674b4-20ca-45e2-9ca6-f2218350862a
 
 ## Credits Section
-| Name                                 | Why is the credit ?                     |
-| ------------------------------------ | --------------------------------------- |
-| Ido Naor, Security Joes CEO          | For supporting this project             |
-| Warren Frame (RamblingCookieMonster) | Using Warre's PSSQLite in ForensicMiner |
-| Nir Avron                            | For letting me test on his machine      |
+| Name                                 | Why is the credit ?                          |
+| ------------------------------------ | -------------------------------------------- |
+| Ido Naor, Security Joes CEO          | For supporting this project                  |
+| Warren Frame (RamblingCookieMonster) | Using Warre's PSSQLite in ForensicMiner      |
+| Nir Avron                            | For letting me test on his machine           |
+| Jan Moronia & Felipe Duarte          | Helping to manage time spent on this project |
+
+
+
 
 
