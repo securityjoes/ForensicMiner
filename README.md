@@ -12,5 +12,5 @@ of forensic analysis. Streamlined and effective, this tool sets a new standard i
 ![How To Install](https://github.com/YosfanEilay/ForensicMiner/assets/132997318/36c30bc3-c9f1-49f7-a3ac-b56c01e53dd1)
 
 #### Know This Before Installation
-* Always run ForensicMiner as administrator, if not, some things may not work properly.
 * Always install ForensicMiner from "C:\" drive.
+* Always run ForensicMiner as administrator, if not, some things may not work properly.
