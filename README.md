@@ -15,10 +15,10 @@ of forensic analysis. Streamlined and effective, this tool sets a new standard i
 * Always install ForensicMiner on "C:\" drive.
 * Always run ForensicMiner as administrator, if not, some things may not work properly.
 
-#### Automatic Installation Process
+#### Installation Process - Text Guide
 1. From this GitHub repository press on "<> Code" and then press on "Download ZIP".
 2. Then move "FM-Package.zip" and "FM-Extractor.ps1" to the "C:\" drive. 
 3. Execute "FM-Extractor.ps1" with administrator privileges on "C:\" drive.
 4. Thats it, you can now use ForensicMiner.
 
-#### Automatic Installation Process - Video Guide
+#### Installation Process - Video Guide
