@@ -32,6 +32,7 @@ of forensic analysis. Streamlined and effective, this tool sets a new standard i
 https://github.com/YosfanEilay/ForensicMiner/assets/132997318/0d9b0dd0-92e5-49db-9522-59e04ef02c6c
 
 ### How To Install On Palo Alto Cortex XDR ?
+Installation Process On - Palo Alto Cortex XDR - Video Guide
 https://github.com/YosfanEilay/ForensicMiner/assets/132997318/d0efd2f4-f88d-43d0-a6a5-c1e428ae90ab
 
 
