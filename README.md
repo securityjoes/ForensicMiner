@@ -66,10 +66,10 @@ https://github.com/YosfanEilay/ForensicMiner/assets/132997318/043674b4-20ca-45e2
 | Nir Avron                            | For letting me test on his machine           |
 
 ## Bug fix (Update Notes)
-| Version            | Description                | Was Fixed? | Credit To | 
-| ------------------ | -------------------------- | ---------- | --------- |
-| ForensicMiner v1.1 | BAM Feature causing errors | Yes        |           |
-|                    | asdasd                     |            |           |
+| Issue Number | Old Version        | New Fixed Version  | Description                | Status     | Credit To     | 
+| ------------ | ------------------ | ------------------ | -------------------------- | ---------- | ------------- |
+| #2           | ForensicMiner v1.0 | ForensicMiner v1.0 | BAM Feature causing errors | Fixed      | Nostramo-DFIR |         |
+|              |                    |                    |                            |            |               |
 
 
 
