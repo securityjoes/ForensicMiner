@@ -65,6 +65,11 @@ https://github.com/YosfanEilay/ForensicMiner/assets/132997318/043674b4-20ca-45e2
 | Jan Moronia & Felipe Duarte          | Helping to manage time spent on this project |
 | Nir Avron                            | For letting me test on his machine           |
 
+## Bug fix (Update Notes)
+| Version            | Description                | Was Fixed? | Credit To | 
+| ------------------ | -------------------------- | ---------- | --------- |
+| ForensicMiner v1.1 | BAM Feature causing errors | Yes        |           |
+|                    | asdasd                     |            |           |
 
 
 
