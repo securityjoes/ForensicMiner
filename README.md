@@ -22,7 +22,7 @@ of forensic analysis. Streamlined and effective, this tool sets a new standard i
 #### Installation Process - Text Guide
 1. In this GitHub repository, click on "<> Code," and then select "Download ZIP."
 2. Extract "ForensicMiner" folder from "ForensicMiner-main.zip".
-3. Move "ForensicMiner" folder to C: drive.
+3. Move "ForensicMiner" folder to C:\\ drive.
 5. That's it! ForensicMiner is now installed. Enjoy
 
 #### Installation Process - Video Guide
