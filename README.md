@@ -37,7 +37,7 @@ https://github.com/YosfanEilay/ForensicMiner/assets/132997318/c0be8264-fc0f-47fc
 https://github.com/YosfanEilay/ForensicMiner/assets/132997318/d0efd2f4-f88d-43d0-a6a5-c1e428ae90ab
 
 ## Quick Start Guide - How To Use ForensicMiner ?
-![Quick Start Guide](https://github.com/YosfanEilay/ForensicMiner/assets/132997318/8b9e4325-6c43-4a7a-994c-dc845f6ebabc)
+https://github.com/YosfanEilay/ForensicMiner/assets/132997318/0f32bc7c-b4fe-4ac5-88cb-09ea701878bd
 After installing ForensicMiner on the machine using the execution of "FM-Extractor.ps1" <br>
 A new folder should be created on the "C:\" drive, called "ForensicMiner". <br>
 <br>
