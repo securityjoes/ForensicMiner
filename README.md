@@ -19,10 +19,11 @@ of forensic analysis. Streamlined and effective, this tool sets a new standard i
   * For more information use this PS Execution Policy Guide - https://www.youtube.com/watch?v=L0fgZ0FJIv0
 
 #### Installation Process - Text Guide
-1. From this GitHub repository press on "<> Code" and then press on "Download ZIP".
-2. Then move "FM-Package.zip" and "FM-Extractor.ps1" to the "C:\" drive. 
-3. Execute "FM-Extractor.ps1" with administrator privileges on "C:\" drive.
-4. Thats it, you can now use ForensicMiner.
+1. In this GitHub repository, click on "<> Code," and then select "Download ZIP."
+2. Extract both the "ForensicMiner" folder and "FM-Extractor.ps1" from the downloaded "ForensicMiner-main.zip" file.
+3. Ensure that both the "ForensicMiner" folder and "FM-Extractor.ps1" are located in the same directory (e.g., on the Desktop).
+4. Execute "FM-Extractor.ps1" with administrator privileges.
+5. That's it! ForensicMiner is now installed. Enjoy
 
 #### Installation Process - Video Guide
 ![Installation Process - Video Guide](https://github.com/YosfanEilay/ForensicMiner/assets/132997318/79e377d0-c7eb-47bb-8db2-3cb79d3737dc)
