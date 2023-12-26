@@ -1,15 +1,15 @@
 ﻿param(
-  #Options
+  # Options
   [Parameter(Mandatory = $false)]
   [ValidateSet('Menu','ZIP','Purge')]
   [string]$O,
 
-  #Analyze
+  # Analyze
   [Parameter(Mandatory = $false)]
   [ValidateSet('RecentItems','WiFiHistory','BAM','RunMRU','RecentDocs','MUICache','BrowserAnalyzer','Harvest')]
   [string]$A,
 
-  #Collect
+  # Collect
   [Parameter(Mandatory = $false)]
   [ValidateSet('BrowserHistory','SystemEvents')]
   [string]$C
