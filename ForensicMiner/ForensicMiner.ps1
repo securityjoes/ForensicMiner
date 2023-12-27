@@ -6,7 +6,7 @@
 
   # Analyze
   [Parameter(Mandatory = $false)]
-  [ValidateSet('RecentItems','WiFiHistory','BAM','RunMRU','RecentDocs','MUICache','BrowserAnalyzer','Harvest')]
+  [ValidateSet('RecentItems','WiFiHistory','BAM','RunMRU','RecentDocs','MUICache','BrowserAnalyzer','Harvest','TypedPaths')]
   [string]$A,
 
   # Collect
