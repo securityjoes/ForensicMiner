@@ -92,7 +92,7 @@ switch ($A) {
   'BrowserAnalyzer' {
     . $RunningPath\02-Analyze\07-BrowserAnalyzer.ps1
   }
-  'TypedPaths.ps1' {
+  'TypedPaths' {
     . $RunningPath\02-Analyze\08-TypedPaths.ps1
   }
 }
