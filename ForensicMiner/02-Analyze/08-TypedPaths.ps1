@@ -55,7 +55,7 @@ foreach ($user in $Users) {
 
             # Iterate through each property in the hashtable and print each line separately
             foreach ($property in $OfflineRegistryProperties.PSObject.Properties) {
-                Write-Host "|#$($property.Name -replace 'url','') - $($property.Value)"
+                Write-Output "|#$($property.Name -replace 'url','') - $($property.Value)"
           }
         
         }
@@ -84,7 +84,7 @@ foreach ($user in $Users) {
 
           # Get all properties of the registry path $FullRegTypedPath
           $registryProperties = Get-ItemProperty -Path $FullRegTypedPath | Select-Object * -ExcludeProperty ("PSProvider","PSChildName","PSParentPath","PSPath")
-
+          $PropertieCount = $registryProperties.PSObject.Properties.Name.Count
           Write-Output "+-----------------------------------"
           Write-Output "|User Type:     Online"
           Write-Output "|User Name:     $OnlyUserName"
@@ -97,7 +97,7 @@ foreach ($user in $Users) {
 
           # Iterate through each property in the hashtable and print each line separately
           foreach ($property in $registryProperties.PSObject.Properties) {
-            Write-Host "|#$($property.Name -replace 'url','') - $($property.Value)"
+            Write-Output "|#$($property.Name -replace 'url','') - $($property.Value)"
           }
         }
         # space
