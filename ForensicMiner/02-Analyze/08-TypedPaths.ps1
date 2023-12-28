@@ -9,6 +9,14 @@ if (Test-Path $FolderPath) {
 #Create the "TypedPaths" folder.
 New-Item -ItemType Directory -Force -Path $FolderPath | Out-Null
 
+# create online folder
+$OnlineFolder = "C:\ForensicMiner\MyEvidence\08-TypedPaths\01-Online-Users"
+New-Item -ItemType Directory -Force -Path $OnlineFolder | Out-Null
+
+# create offline folder
+$OfflineFolder = "C:\ForensicMiner\MyEvidence\08-TypedPaths\02-Offline-Users"
+New-Item -ItemType Directory -Force -Path $OfflineFolder | Out-Null
+
 # define the variable path to TypedPaths on registry
 $HalfPathTypedPaths = "Software\Microsoft\Windows\CurrentVersion\Explorer\TypedPaths"
 
@@ -48,19 +56,23 @@ foreach ($user in $Users) {
         $OfflinePropertieCount = $OfflineRegistryProperties.PSObject.Properties.Name.Count
 
         if ($OfflinePropertieCount -ge 1) {
-          Write-Output "+-------------------------------------"
-          Write-Output "|User Type:     Offline"
-          Write-Output "|User Name:     $OnlyUserName"
-          Write-Output "|Which Hive:    NTUSER.DAT"
-          Write-Output "|Hive Status:   Registry Was Loaded!"
-          Write-Output "|Registry Path: HKLM\Offline-$OnlyUserName"
-          Write-Output "+-------------------------------------"
-          Write-Output "|User TypedPaths List"
-          Write-Output "|--------------------"
+
+          # create the log text file for Offline users
+          $OfflineOutFile = "C:\ForensicMiner\MyEvidence\08-TypedPaths\02-Offline-Users\$OnlyUserName.txt"
+
+          Write-Output "+-------------------------------------" | Tee-Object -FilePath $OfflineOutFile -Append
+          Write-Output "|User Type:     Offline" | Tee-Object -FilePath $OfflineOutFile -Append
+          Write-Output "|User Name:     $OnlyUserName" | Tee-Object -FilePath $OfflineOutFile -Append
+          Write-Output "|Which Hive:    NTUSER.DAT" | Tee-Object -FilePath $OfflineOutFile -Append
+          Write-Output "|Hive Status:   Registry Was Loaded!" | Tee-Object -FilePath $OfflineOutFile -Append
+          Write-Output "|Registry Path: HKLM\Offline-$OnlyUserName" | Tee-Object -FilePath $OfflineOutFile -Append
+          Write-Output "+-------------------------------------" | Tee-Object -FilePath $OfflineOutFile -Append
+          Write-Output "|User TypedPaths List" | Tee-Object -FilePath $OfflineOutFile -Append
+          Write-Output "|--------------------" | Tee-Object -FilePath $OfflineOutFile -Append
 
           # Iterate through each property in the hashtable and print each line separately
           foreach ($property in $OfflineRegistryProperties.PSObject.Properties) {
-            Write-Output "|#$($property.Name -replace 'url','') - $($property.Value)"
+            Write-Output "|#$($property.Name -replace 'url','') - $($property.Value)" | Tee-Object -FilePath $OfflineOutFile -Append
           }
         }
 
@@ -99,18 +111,22 @@ foreach ($user in $Users) {
           $PropertieCount = $registryProperties.PSObject.Properties.Name.Count
 
           if ($PropertieCount -ge 1) {
-            Write-Output "+-----------------------------------"
-            Write-Output "|User Type:     Online"
-            Write-Output "|User Name:     $OnlyUserName"
-            Write-Output "|Which Hive:    NTUSER.DAT"
-            Write-Output "|Registry Path: HKEY_USERS"
-            Write-Output "|Hive Status:   Hive Already Loaded!"
-            Write-Output "+-----------------------------------"
-            Write-Output "|User TypedPaths List"
-            Write-Output "|--------------------"
+
+            # create the log text file for Online users
+            $OnlineOutFile = "C:\ForensicMiner\MyEvidence\08-TypedPaths\01-Online-Users\$OnlyUserName.txt"
+
+            Write-Output "+-----------------------------------" | Tee-Object -FilePath $OnlineOutFile -Append
+            Write-Output "|User Type:     Online" | Tee-Object -FilePath $OnlineOutFile -Append
+            Write-Output "|User Name:     $OnlyUserName" | Tee-Object -FilePath $OnlineOutFile -Append
+            Write-Output "|Which Hive:    NTUSER.DAT" | Tee-Object -FilePath $OnlineOutFile -Append
+            Write-Output "|Registry Path: HKEY_USERS" | Tee-Object -FilePath $OnlineOutFile -Append
+            Write-Output "|Hive Status:   Hive Already Loaded!" | Tee-Object -FilePath $OnlineOutFile -Append
+            Write-Output "+-----------------------------------" | Tee-Object -FilePath $OnlineOutFile -Append
+            Write-Output "|User TypedPaths List" | Tee-Object -FilePath $OnlineOutFile -Append
+            Write-Output "|--------------------" | Tee-Object -FilePath $OnlineOutFile -Append
 
             foreach ($property in $registryProperties.PSObject.Properties) {
-              Write-Output "|#$($property.Name -replace 'url','') - $($property.Value)"
+              Write-Output "|#$($property.Name -replace 'url','') - $($property.Value)" | Tee-Object -FilePath $OnlineOutFile -Append
             }
           }
 
@@ -128,6 +144,12 @@ foreach ($user in $Users) {
   }
 }
 
-Write-Output "Empty TypedPaths User Table"
-Write-Output "+-------------------------+"
-$EmpthSubkey_HT.Values
+$EmpthSubkeyCount = $EmpthSubkey_HT.Values.Count
+if ($EmpthSubkeyCount -ge 1) {
+  Write-Output "Empty TypedPaths User Table"
+  Write-Output "+-------------------------+"
+  $EmpthSubkey_HT.Values
+}
+
+else {
+}
