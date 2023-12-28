@@ -13,7 +13,7 @@
     Write-Output "│                                                                          │"
     Write-Output "│3. Purge        Purge Forensic Miner Tool Footprint From This Host        │"
     Write-Output "│                                                                          │"
-    Write-Output "│4. Updateee       Update Forensic Miner to the latest version               │"
+    Write-Output "│4. Update       Update Forensic Miner to the latest version               │"
     Write-Output "│                                                                          │"
     Write-Output "╰~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~╯"
     Write-Output ""
