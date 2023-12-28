@@ -48,5 +48,8 @@ Write-Output "[*] Current directory path is now $CurrentPath"
 Start-Sleep -Seconds 1.5
 Remove-Item -Path "C:\ForensicMiner" -Force -Recurse -ErrorAction SilentlyContinue | Out-Null
 
+# secret dev option related
+Remove-Item "C:\Archive.zip" -Recurse -Force -ErrorAction SilentlyContinue | Out-Null
+
 # space
 Write-Output ""
