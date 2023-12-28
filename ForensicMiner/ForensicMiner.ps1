@@ -1,7 +1,7 @@
 ﻿param(
   # Options
   [Parameter(Mandatory = $false)]
-  [ValidateSet('Menu','ZIP','Purge')]
+  [ValidateSet('Menu','ZIP','Purge','Update')]
   [string]$O,
 
   # Analyze
@@ -52,6 +52,9 @@ switch ($O) {
   }
   'Purge' {
     . $RunningPath\01-Options\03-Purge.ps1
+  }
+  'Update' {
+    . $RunningPath\01-Options\04-Update.ps1
   }
 }
 
