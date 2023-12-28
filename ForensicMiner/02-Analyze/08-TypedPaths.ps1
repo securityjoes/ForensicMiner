@@ -153,3 +153,11 @@ if ($EmpthSubkeyCount -ge 1) {
 
 else {
 }
+
+Write-Output ""
+Write-Output "+-------------------------------------------------------------+"
+Write-Output "|The record of this forensic evidence is saved on this machine|"
+Write-Output "+-------------------------------------------------------------+"
+Write-Output '|     Path - "C:\ForensicMiner\MyEvidence\08-TypedPaths"      |'
+Write-Output "+-------------------------------------------------------------+"
+Write-Output ""
