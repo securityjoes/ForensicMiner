@@ -71,7 +71,7 @@ switch ($A) {
     Start-Sleep -Milliseconds 500
     . $RunningPath\02-Analyze\07-BrowserAnalyzer.ps1
     Start-Sleep -Milliseconds 500
-    . $RunningPath\02-Analyze\08-TypedPaths.ps1v
+    . $RunningPath\02-Analyze\08-TypedPaths.ps1
     }
   'BAM' {
     . $RunningPath\02-Analyze\01-BAM.ps1
