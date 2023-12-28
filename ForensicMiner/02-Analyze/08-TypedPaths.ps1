@@ -55,7 +55,7 @@ foreach ($user in $Users) {
 
             # Iterate through each property in the hashtable and print each line separately
             foreach ($property in $OfflineRegistryProperties.PSObject.Properties) {
-                Write-Host "├#$($property.Name -replace 'url','') - $($property.Value)"
+                Write-Host "|#$($property.Name -replace 'url','') - $($property.Value)"
           }
         
         }
@@ -97,7 +97,7 @@ foreach ($user in $Users) {
 
           # Iterate through each property in the hashtable and print each line separately
           foreach ($property in $registryProperties.PSObject.Properties) {
-            Write-Host "├#$($property.Name -replace 'url','') - $($property.Value)"
+            Write-Host "|#$($property.Name -replace 'url','') - $($property.Value)"
           }
         }
         # space
