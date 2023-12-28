@@ -1,3 +1,5 @@
+$EmpthSubkey_HT = @{}
+
 #Check if "TypedPaths" folder exists.
 $FolderPath = "C:\ForensicMiner\MyEvidence\08-TypedPaths"
 if (Test-Path $FolderPath) {
@@ -33,38 +35,46 @@ foreach ($user in $Users) {
 
     # if statment for offline users
     if ($output -like "The operation completed successfully.") {
-        
-        # full registry path with offline user hive to TypedPaths
-        $FullOfflineRegistryPath = "Registry::HKEY_LOCAL_MACHINE\Offline-$OnlyUserName\$HalfPathTypedPaths"
 
-        if (Test-Path -Path $FullOfflineRegistryPath) {
-        
+      # full registry path with offline user hive to TypedPaths
+      $FullOfflineRegistryPath = "Registry::HKEY_LOCAL_MACHINE\Offline-$OnlyUserName\$HalfPathTypedPaths"
+
+      if (Test-Path -Path $FullOfflineRegistryPath) {
+
         # Get all properties of the registry path $FullRegTypedPath
         $OfflineRegistryProperties = Get-ItemProperty -Path $FullOfflineRegistryPath | Select-Object * -ExcludeProperty ("PSProvider","PSChildName","PSParentPath","PSPath")
 
-        # Output of offline loaded users hives
-        Write-Output "+-------------------------------------"
-        Write-Output "|User Type:     Offline"
-        Write-Output "|User Name:     $OnlyUserName"
-        Write-Output "|Which Hive:    NTUSER.DAT"
-        Write-Output "|Hive Status:   Registry Was Loaded!"
-        Write-Output "|Registry Path: HKLM\Offline-$OnlyUserName"
-        Write-Output "+-------------------------------------"
-        Write-Output "|User TypedPaths List"
-        Write-Output "|--------------------"
+        # variable to store the number of propertie counts
+        $OfflinePropertieCount = $OfflineRegistryProperties.PSObject.Properties.Name.Count
 
-            # Iterate through each property in the hashtable and print each line separately
-            foreach ($property in $OfflineRegistryProperties.PSObject.Properties) {
-                Write-Output "|#$($property.Name -replace 'url','') - $($property.Value)"
+        if ($OfflinePropertieCount -ge 1) {
+          Write-Output "+-------------------------------------"
+          Write-Output "|User Type:     Offline"
+          Write-Output "|User Name:     $OnlyUserName"
+          Write-Output "|Which Hive:    NTUSER.DAT"
+          Write-Output "|Hive Status:   Registry Was Loaded!"
+          Write-Output "|Registry Path: HKLM\Offline-$OnlyUserName"
+          Write-Output "+-------------------------------------"
+          Write-Output "|User TypedPaths List"
+          Write-Output "|--------------------"
+
+          # Iterate through each property in the hashtable and print each line separately
+          foreach ($property in $OfflineRegistryProperties.PSObject.Properties) {
+            Write-Output "|#$($property.Name -replace 'url','') - $($property.Value)"
           }
-        
         }
 
-        # if statment for users who don't have this path $FullOnlineRegistryPath
         else {
+          $EmpthSubkey_HT[$OnlyUserName] = "[!] TypedPaths registry subkey is empty for user $OnlyUserName."
         }
-        
+      }
 
+      # if statment for users who don't have this path $FullOnlineRegistryPath
+      else {
+      }
+
+      # space
+      Write-Output ""
     }
 
     # if statment for online users
@@ -84,20 +94,28 @@ foreach ($user in $Users) {
 
           # Get all properties of the registry path $FullRegTypedPath
           $registryProperties = Get-ItemProperty -Path $FullRegTypedPath | Select-Object * -ExcludeProperty ("PSProvider","PSChildName","PSParentPath","PSPath")
-          $PropertieCount = $registryProperties.PSObject.Properties.Name.Count
-          Write-Output "+-----------------------------------"
-          Write-Output "|User Type:     Online"
-          Write-Output "|User Name:     $OnlyUserName"
-          Write-Output "|Which Hive:    NTUSER.DAT"
-          Write-Output "|Registry Path: HKEY_USERS"
-          Write-Output "|Hive Status:   Hive Already Loaded!"
-          Write-Output "+-----------------------------------"
-          Write-Output "|User TypedPaths List"
-          Write-Output "|--------------------"
 
-          # Iterate through each property in the hashtable and print each line separately
-          foreach ($property in $registryProperties.PSObject.Properties) {
-            Write-Output "|#$($property.Name -replace 'url','') - $($property.Value)"
+          # variable to store the number of propertie counts
+          $PropertieCount = $registryProperties.PSObject.Properties.Name.Count
+
+          if ($PropertieCount -ge 1) {
+            Write-Output "+-----------------------------------"
+            Write-Output "|User Type:     Online"
+            Write-Output "|User Name:     $OnlyUserName"
+            Write-Output "|Which Hive:    NTUSER.DAT"
+            Write-Output "|Registry Path: HKEY_USERS"
+            Write-Output "|Hive Status:   Hive Already Loaded!"
+            Write-Output "+-----------------------------------"
+            Write-Output "|User TypedPaths List"
+            Write-Output "|--------------------"
+
+            foreach ($property in $registryProperties.PSObject.Properties) {
+              Write-Output "|#$($property.Name -replace 'url','') - $($property.Value)"
+            }
+          }
+
+          else {
+            $EmpthSubkey_HT[$OnlyUserName] = "[!] TypedPaths registry subkey is empty for user $OnlyUserName."
           }
         }
         # space
@@ -110,6 +128,6 @@ foreach ($user in $Users) {
   }
 }
 
-
-#Text $Outfile Veriable
-#$OutFile = "C:\ForensicMiner\MyEvidence\02-RunMRU-History\RunMRU-History-of-$($OnlyUserName).txt"
+Write-Output "Empty TypedPaths User Table"
+Write-Output "+-------------------------+"
+$EmpthSubkey_HT.Values
