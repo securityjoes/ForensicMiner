@@ -9,7 +9,7 @@
     Write-Output "│                                                                          │"
     Write-Output "│1. ZIP          ZIP evidence you gathered from Forensic Miner tool        │"
     Write-Output "│                                                                          │"
-    Write-Output "│2. Menu         Show menu of whatyou can do with Forensic Miner tool     │"
+    Write-Output "│2. Menu         Show menu of whatyou can do with Forensic Miner tool      │"
     Write-Output "│                                                                          │"
     Write-Output "│3. Purge        Purge Forensic Miner tool footprint from this host        │"
     Write-Output "│                                                                          │"
