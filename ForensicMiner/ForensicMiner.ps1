@@ -25,6 +25,32 @@ New-Item -ItemType Directory -Force -Path C:\ForensicMiner\MyEvidence | Out-Null
 #Create the "C:\ForensicMiner\MyCollectedFiles" folder.
 New-Item -ItemType Directory -Force -Path C:\ForensicMiner\MyCollectedFiles | Out-Null
 
+# current script version
+$CurrentVersion = "v1.4"
+
+# test conection to GitHub domain
+$ConnectionStatus = Test-Connection -ComputerName "GitHub.com" -Count 1 -ErrorAction SilentlyContinue
+
+# statment to check if the there is connection to GitHub or not
+if ($ConnectionStatus) {
+$ConnectionFlag = "True"
+
+# GitHub API URL for the repository releases
+$FM_URL = "https://api.github.com/repos/YosfanEilay/ForensicMiner/releases/latest"
+
+# Use Invoke-RestMethod to make a GET request to the GitHub API
+$response = Invoke-RestMethod -Uri $FM_URL -Method Get -ErrorAction Continue
+
+# Extract the version number from the response
+$Latestversion = $response.tag_name
+
+}
+
+# execute this if connection to GitHub is NOT reachable
+else {
+$ConnectionFlag = "False"
+}
+
 Write-Output ""
 Write-Output "███████╗ ██████╗ ██████╗ ███████╗███╗   ██╗███████╗██╗ ██████╗"
 Write-Output "██╔════╝██╔═══██╗██╔══██╗██╔════╝████╗  ██║██╔════╝██║██╔════╝"
@@ -39,8 +65,27 @@ Write-Output "        ██╔████╔██║██║██╔██�
 Write-Output "        ██║╚██╔╝██║██║██║╚██╗██║██╔══╝  ██╔══██╗"
 Write-Output "        ██║ ╚═╝ ██║██║██║ ╚████║███████╗██║  ██║"
 Write-Output "        ╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝"
-Write-Output "                 github.com/YosfanEilay"
-Write-Output "                     Version: 1.4v"
+
+if ($ConnectionFlag -eq "True") {
+# if statment to comper versions
+if ($CurrentVersion -eq $Latestversion) {
+Write-Output "          You are using the latest version $CurrentVersion"
+Write-Output "                 No update is required."
+}
+
+else {
+Write-Output "      Update Available: You are using version $CurrentVersion"
+Write-Output "              The latest version is $latestVersion"
+Write-Output "                  Update is required."
+}
+}
+
+else {
+Write-Output ""
+Write-Output "                     Version: $CurrentVersion"
+}
+
+# space
 Write-Output ""
 
 switch ($O) {
